@@ -26,30 +26,87 @@
         <a href="index.html"
           ><img src="images/krafterrz_logo.jpg" alt="logo"
         /></a>
-        <a href="index.html" class="brand-logo center edwardian"
+        <a
+          href="index.html"
+          class="brand-logo center edwardian"
+          style="font-size: 35px;"
           ><span style="color: #002060;">Kra</span>fterrz</a
         >
         <a href="#" data-target="mobile-demo" class="sidenav-trigger right"
           ><i class="material-icons">menu</i></a
         >
         <ul id="nav-mobile" class="right hide-on-med-and-down">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
     </nav>
     <ul class="sidenav" id="mobile-demo">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="contact.html">Contact</a></li>
+      <li><a href="#home_mobile">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
     </ul>
+    <div class="row section scrollspy hide-on-med-and-up" id="home_mobile">
+      <div
+        class="col s12 m6 l6 push-m3 push-l3 center"
+        style="color: white; margin-top: 15px; font-size: 15px;"
+      >
+        Shaping Lives, Strengthening Foundations
+      </div>
+    </div>
+    <div class="row section scrollspy hide-on-small-only" id="home">
+      <div
+        class="col s12 m6 l6 push-m3 push-l3 center"
+        style="color: white; margin-top: 50px; font-size: 25px;"
+      >
+        Shaping Lives, Strengthening Foundations
+      </div>
+    </div>
+    <div class="row section scrollspy" id="contact">
+      <div class="col s12 m6 mush-m3 push-l3">
+        <div class="card hoverable">
+          <div class="card-content" style="padding-bottom: 0px;">
+            <span class="card-title">Get in Touch</span>
+            <div class="row" style="margin-bottom: 0px;">
+              <form
+                action="https://formspree.io/sunilbajaj@krafterrz.com"
+                class="col s12 m12 l12"
+              >
+                <div class="row">
+                  <div class="input-field col s12">
+                    <input id="full_name" type="text" class="validate" />
+                    <label for="full_name">Name</label>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="input-field col s12">
+                    <input id="email" type="email" class="validate" />
+                    <label for="email">Email</label>
+                  </div>
+                </div>
+                <div class="card-action">
+                  <a class="waves-effect waves-light btn right form_submit"
+                    >Send</a
+                  >
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <!--JavaScript at end of body for optimized loading-->
     <script type="text/javascript" src="js/materialize.min.js"></script>
     <script type="text/javascript">
       document.addEventListener("DOMContentLoaded", function() {
-        var elems = document.querySelectorAll(".sidenav");
-        var instances = M.Sidenav.init(elems, { edge: "right" });
+        var sidenav_elems = document.querySelectorAll(".sidenav");
+        var sidenav_instances = M.Sidenav.init(sidenav_elems, {
+          edge: "right"
+        });
+
+        var scrollspy_elems = document.querySelectorAll(".scrollspy");
+        var scrollspy_instances = M.ScrollSpy.init(sidenav_elems, {});
       });
     </script>
   </body>
