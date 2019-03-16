@@ -6,3 +6,8 @@
 .nav-wrapper ul li a {
   color: black;
 }
+
+@font-face {
+  font-family: "Edwardian Script";
+  src: url(fonts/Edwardian-Script-ITC.tiff);
+}
