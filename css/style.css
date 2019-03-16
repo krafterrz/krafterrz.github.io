@@ -12,6 +12,10 @@
   width: auto;
 }
 
+.sidenav-trigger {
+  color: black;
+}
+
 @font-face {
   font-family: "Edwardian Script";
   src: url(../fonts/Edwardian-Script-ITC.ttf);
