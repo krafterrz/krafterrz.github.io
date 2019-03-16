@@ -1,2 +1,2 @@
 # krafterrz.github.io
-Company Website
+Company Website, developed by [@vikrambajaj22](https://www.github.com/vikrambajaj22)
