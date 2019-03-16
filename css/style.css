@@ -7,6 +7,11 @@
   color: black;
 }
 
+.nav-wrapper img {
+  height: 100%;
+  width: auto;
+}
+
 @font-face {
   font-family: "Edwardian Script";
   src: url(../fonts/Edwardian-Script-ITC.ttf);
