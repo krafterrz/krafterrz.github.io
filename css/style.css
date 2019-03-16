@@ -46,3 +46,23 @@
   background-repeat: repeat-x;
   margin-bottom: 0px;
 }
+
+.btn:hover,
+.btn:focus {
+  background: lightgreen;
+}
+
+.input-field input:focus + label,
+.input-field textarea:focus + label {
+  color: lightgreen !important;
+}
+
+.input-field i {
+  color: #002060 !important;
+}
+
+.input-field input:focus,
+.input-field textarea:focus {
+  border-bottom: 1px solid lightgreen !important;
+  box-shadow: 0 1px 0 0 lightgreen !important;
+}

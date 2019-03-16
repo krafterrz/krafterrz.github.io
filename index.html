@@ -21,29 +21,31 @@
   </head>
 
   <body>
-    <nav>
-      <div class="nav-wrapper">
-        <a href="index.html"
-          ><img src="images/krafterrz_logo.jpg" alt="logo"
-        /></a>
-        <a
-          href="index.html"
-          class="brand-logo center edwardian"
-          style="font-size: 35px;"
-          ><span style="color: #002060;">Kra</span>fterrz</a
-        >
-        <a href="#" data-target="mobile-demo" class="sidenav-trigger right"
-          ><i class="material-icons">menu</i></a
-        >
-        <ul id="nav-mobile" class="right hide-on-med-and-down">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
-    </nav>
+    <div class="navbar-fixed">
+      <nav>
+        <div class="nav-wrapper">
+          <a href="index.html"
+            ><img src="images/krafterrz_logo.jpg" alt="logo"
+          /></a>
+          <a
+            href="index.html"
+            class="brand-logo center edwardian"
+            style="font-size: 35px;"
+            ><span style="color: #002060;">Kra</span>fterrz</a
+          >
+          <a href="#" data-target="mobile-demo" class="sidenav-trigger right"
+            ><i class="material-icons">menu</i></a
+          >
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
     <ul class="sidenav" id="mobile-demo">
-      <li><a href="#home_mobile">Home</a></li>
+      <li><a href="#">Home</a></li>
       <li><a href="#about">About</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
@@ -75,16 +77,31 @@
               >
                 <div class="row">
                   <div class="input-field col s12">
+                    <i class="material-icons prefix">account_circle</i>
                     <input id="full_name" type="text" class="validate" />
                     <label for="full_name">Name</label>
                   </div>
                 </div>
+
                 <div class="row">
                   <div class="input-field col s12">
+                    <i class="material-icons prefix">email</i>
                     <input id="email" type="email" class="validate" />
                     <label for="email">Email</label>
                   </div>
                 </div>
+
+                <div class="row">
+                  <div class="input-field col s12">
+                    <i class="material-icons prefix">chat</i>
+                    <textarea
+                      id="textarea"
+                      class="materialize-textarea"
+                    ></textarea>
+                    <label for="textarea">Queries and/or Requirements</label>
+                  </div>
+                </div>
+
                 <div class="card-action">
                   <a class="waves-effect waves-light btn right form_submit"
                     >Send</a
