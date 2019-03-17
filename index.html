@@ -72,10 +72,24 @@
             <span class="card-title">Get in Touch</span>
             <div class="row" style="margin-bottom: 0px;">
               <form
-                action="https://formspree.io/sunilbajaj@krafterrz.com"
+                action="https://jumprock.co/mail/sunilbajaj"
                 class="col s12 m12 l12"
                 method="POST"
               >
+                <!-- DO NOT CHANGE FIELD NAMES -->
+                <!-- honeypot for spam prevention -->
+                <input
+                  type="text"
+                  name="trapit"
+                  value=""
+                  style="display:none"
+                />
+                <!-- custom email subject -->
+                <input
+                  name="subject"
+                  value="Message From Website!"
+                  style="display: none;"
+                />
                 <div class="row">
                   <div class="input-field col s12">
                     <i class="material-icons prefix">account_circle</i>
@@ -83,7 +97,7 @@
                       id="full_name"
                       type="text"
                       class="validate"
-                      name="full_name"
+                      name="name"
                       required
                     />
                     <label for="full_name">Name</label>
@@ -117,6 +131,12 @@
                   </div>
                 </div>
 
+                <!-- for redirection after successful form submission -->
+                <input
+                  type="hidden"
+                  name="after"
+                  value="https://krafterrz.github.io/thank_you.html"
+                />
                 <div class="card-action">
                   <button
                     class="waves-effect waves-light btn right form_submit"
