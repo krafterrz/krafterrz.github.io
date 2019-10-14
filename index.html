@@ -477,26 +477,24 @@
               <img src="images/contact.PNG" alt="contact_us" />
             </div>
             <div class="card-content" style="padding-bottom: 0px;">
+              <!-- for successful form redirection-->
+              <script type="text/javascript">
+                var submitted = false;
+              </script>
+              <iframe
+                name="hidden_iframe"
+                id="hidden_iframe"
+                style="display:none;"
+                onload="if(submitted) {window.location='thank_you.html';}"
+              ></iframe>
               <div class="row" style="margin-bottom: 0px;">
                 <form
-                  action="https://jumprock.co/mail/sunilbajaj"
+                  action="https://docs.google.com/forms/u/1/d/e/1FAIpQLSesBsDX6xUDjQ7bkJdrQXQzx4jHMZpbqT8MGiONKerAgT-BYA/formResponse"
                   class="col s12 m12 l12"
                   method="POST"
+                  target="hidden_iframe"
+                  onsubmit="submitted=true;"
                 >
-                  <!-- DO NOT CHANGE FIELD NAMES -->
-                  <!-- honeypot for spam prevention -->
-                  <input
-                    type="text"
-                    name="trapit"
-                    value=""
-                    style="display:none"
-                  />
-                  <!-- custom email subject -->
-                  <input
-                    name="subject"
-                    value="Message From Website!"
-                    style="display: none;"
-                  />
                   <div class="row">
                     <div class="input-field col s12">
                       <i class="far fa-user prefix"></i>
@@ -504,7 +502,7 @@
                         id="full_name"
                         type="text"
                         class="validate"
-                        name="name"
+                        name="entry.1668808046"
                         required
                       />
                       <label for="full_name">Name</label>
@@ -518,7 +516,7 @@
                         id="email"
                         type="email"
                         class="validate"
-                        name="email"
+                        name="emailAddress"
                         required
                       />
                       <label for="email">Email</label>
@@ -531,7 +529,7 @@
                       <textarea
                         id="textarea"
                         class="materialize-textarea validate"
-                        name="message"
+                        name="entry.1553825254"
                         required
                       ></textarea>
                       <label for="textarea">Queries and/or Requirements</label>
